@@ -93,6 +93,7 @@ li {
     align-items: center;
     /*IE不吃*/
     >img {
+        height: 100%;
         width: 100%;
         object-fit: cover;
         position: absolute;
@@ -130,6 +131,7 @@ li {
         background: rgba(0, 0, 0, .5);
         padding: 18px 8px;
         font-weight: bolder;
+        cursor: pointer;
     }
     .img-down {
         position: absolute;
@@ -137,7 +139,7 @@ li {
         right: 0;
         left: 0;
         color: white;
-        font-size: 14px;
+        font-size: 10px;
         z-index: 99;
     }
     .img-down_left {
@@ -226,6 +228,11 @@ li {
             width: 100%;
             display: flex;
             align-items: center;
+            >a {
+            color: white;
+            padding: 20px 9px;
+            font-weight: bolder;
+             }
         }
         .up a,
         .up .upcontent {
@@ -242,12 +249,6 @@ li {
             height: 310px;
             text-align: center;
             margin: 0 auto;
-            font-weight: bolder;
-        }
-        .up>a {
-            color: white;
-            padding: 20px 9px;
-            background: rgba(0, 0, 0, .5);
             font-weight: bolder;
         }
         .img-down {

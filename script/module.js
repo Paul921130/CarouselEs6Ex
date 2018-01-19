@@ -17,6 +17,16 @@ const ModuleDefaults =  {
             './imgs/img9.jpg',
             './imgs/img10.jpg',
             'http://fakeimg.pl/350x300/?text=15',
+            'http://fakeimg.pl/250x200/?text=Hello',
+            'http://fakeimg.pl/250x200/?text=Hello',
+            'http://fakeimg.pl/250x200/?text=Hello',
+            'http://fakeimg.pl/250x200/?text=Hello',
+            'http://fakeimg.pl/250x200/?text=Hello',
+            'http://fakeimg.pl/250x200/?text=Hello',
+            'http://fakeimg.pl/350x300/?text=World&font=lobster',
+            'http://fakeimg.pl/350x300/?text=World&font=lobster',
+            'http://fakeimg.pl/350x300/?text=World&font=lobster',
+            'http://fakeimg.pl/350x300/?text=World&font=lobster',
         ],
 };
 const ModuleReturns = ['output', 'methods'];
@@ -126,11 +136,11 @@ class Module {
                 nowSmall.addClass("select");
                 var nowSmallSrc = nowSmall.attr("src");
                 $(".mainPic").attr("src", nowSmallSrc);
-            } else if (selectNumber == lastIdNumber && lastIdNumber < 14) {
+            } else if (selectNumber == lastIdNumber && lastIdNumber < dataLength-1) {
                 $('.smallPic_ul').empty();
                 var changePage = firstIdNumber;
                 changePage += pageSize;
-                for (var i = 0 + changePage; i < (pageSize + changePage) && i < 15; i++) {
+                for (var i = 0 + changePage; i < (pageSize + changePage) && i < dataLength; i++) {
                     var smallPic = '<li><img class="' + (i) + 'small smallPic" src="' + optionData[i] + '"></li>';
                     $('.smallPic_ul').append(smallPic);
                     if (i % pageSize === 0) {
@@ -212,10 +222,10 @@ class Module {
             var smallPicIdNum = parseInt($('.select').attr("class"));
             var lastIdNumber = parseInt($('.last').attr("class"));
             var changePage = firstIdNumber;
-            if (lastIdNumber < 14) {
+            if (lastIdNumber < dataLength-1) {
                 $('.smallPic_ul').empty();
                 changePage += pageNumber;
-                for (var i = 0 + changePage; i < (pageNumber + changePage) && i < 15; i++) {
+                for (var i = 0 + changePage; i < (pageNumber + changePage) && i < dataLength; i++) {
                     var smallPic = '<li><img class="' + (i) + 'small smallPic" src="' + optionData[i] + '"></li>';
                     $('.smallPic_ul').append(smallPic);
                     if (i % pageNumber === 0) {
