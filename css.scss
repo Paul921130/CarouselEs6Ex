@@ -1,0 +1,291 @@
+// -------------------------------------
+// Susy Import
+// -------------------------------------
+//@import "susy";
+// -------------------------------------
+// Core Mixins
+// -------------------------------------
+@import "../core/core/mixins";
+// -------------------------------------
+// Variables Import
+// -------------------------------------
+// 載入全域變數
+@import "../core/core/variables";
+// -------------------------------------
+// Components / Modules Setting
+// -------------------------------------
+// 請輸入您的ClassName
+$classname: 'carousel';
+// -------------------------------------
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    /*取消反白for Chrome*/
+    -moz-user-select: none;
+    /* 取消反白for Firefox */
+}
+a:hover{
+	text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.select {
+    border: 3px solid #ff615e;
+}
+.down{
+	display: none;
+	@media screen and (min-width: $screen-tablet) {
+        // style on tablet device
+    }
+    @media screen and (min-width: $screen-desktop) {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    	a{
+    		color: #868686;
+   			font-weight: bold;
+    		transform: scaleY(2);
+    		font-size: 6px;
+    		cursor: pointer;
+    	}
+    	>ul{
+			width: 90%;
+    		display: flex;
+    		margin-bottom: 0;
+    		align-items: center;
+    		justify-content: space-around;
+    		>li{
+    			background: #ccc;
+    			margin: 5px 2px;
+    			>img{
+					width: 70px;
+    				object-fit: cover;
+    				cursor: pointer;
+    			}
+    		}
+    	}
+    }
+    @media screen and (min-width: $screen-lg-desktop) {
+    	>ul{
+    		>li{
+    			>img{
+					width: 85px;
+    			}
+    		}
+    	}
+    }
+}
+// 您的CSS Code
+// -------------------------------------
+//以下範例可以刪除，改為您自已的CSS Code
+.#{$classname} {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 100%;
+    /*	height: 550px;*/
+    background-color: #cccccc;
+    position: relative;
+    overflow: hidden;
+    /*	display:flex;*/
+    align-items: center;
+    /*IE不吃*/
+    >img {
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto
+    }
+    .up {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .up a,
+    .up .upcontent {
+        z-index: 9;
+        float: left;
+        justify-content: center;
+    }
+    .up .up-right {
+        float: right;
+        right: 0;
+    }
+    .upcontent {
+        color: #909090;
+        height: 200px;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: bolder;
+    }
+    .up a {
+        color: white;
+        background: rgba(0, 0, 0, .5);
+        padding: 18px 8px;
+        font-weight: bolder;
+    }
+    .img-down {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        color: white;
+        font-size: 14px;
+        z-index: 99;
+    }
+    .img-down_left {
+        margin-left: 10px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .img-down_right{
+		display: none;
+	}
+
+    // style on phone device
+    @media screen and (min-width: $screen-tablet) {
+    .upcontent {
+        color: #909090;
+        height: 230px;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: bolder;
+    }
+    .img-down{
+    	font-size: 17px;
+    }
+        // style on tablet device
+    
+    }
+    @media screen and (min-width: $screen-desktop) {
+	    .up{
+			width: 100%;
+			display:flex;
+			align-items:center;
+		}
+		.up a, .up .upcontent{
+			z-index: 9;
+			float: left;
+			justify-content:center;
+		}
+		.up .up-right{
+			float: right;
+			right: 0;
+		}
+		.upcontent{
+			color: #909090;	
+			height: 270px;
+			text-align: center;
+			margin: 0 auto;
+			font-weight: bolder;
+		}
+		.up > a{
+			cursor: pointer;
+			color: white;
+			padding: 20px 9px;
+			font-weight: bolder;
+		}
+		.img-down{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			color: white;
+			font-size: 17px;
+			z-index: 99;
+		}
+		.img-down_left{
+			line-height: 34px;
+			margin-left: 10px;
+			float: left;
+		}
+		.img-down_right{
+			display: inline;
+			float: right;
+			cursor: pointer;
+			padding:8px;
+			background: #3a9570;
+			margin-top: 1px;	
+		}
+		.img-down_right img{
+			width: 24px;
+			margin-left: 8px;
+		}
+        // style on desktop device
+    }
+    @media screen and (min-width: $screen-lg-desktop) {
+        // style on desktop device
+        .up {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .up a,
+        .up .upcontent {
+            z-index: 9;
+            float: left;
+            justify-content: center;
+        }
+        .up .up-right {
+            float: right;
+            right: 0;
+        }
+        .upcontent {
+            color: #909090;
+            height: 310px;
+            text-align: center;
+            margin: 0 auto;
+            font-weight: bolder;
+        }
+        .up>a {
+            color: white;
+            padding: 20px 9px;
+            background: rgba(0, 0, 0, .5);
+            font-weight: bolder;
+        }
+        .img-down {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            color: white;
+            font-size: 17px;
+            z-index: 99;
+        }
+        .img-down_left {
+            margin-left: 10px;
+            margin-top: 4px;
+            float: left;
+        }
+        .img-down_right {
+        	margin-top:6px; 
+        	display: inline;
+            float: right;
+            cursor: pointer;
+            padding: 5px;
+            padding-left: 10px;
+            background: #3a9570;
+        }
+        .img-down_right img {
+        	display: inline;
+            width: 24px;
+            margin: 6px 3px 6px 6px;
+        }
+    }
+    &.#{$classname}_modifier {
+
+    }
+    &>.#{$classname}_child {
+
+    }
+    & .#{$classname}_descendant {
+
+    }
+}
