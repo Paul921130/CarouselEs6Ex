@@ -19,14 +19,10 @@ const ModuleDefaults =  {
             'http://fakeimg.pl/350x300/?text=15',
             'http://fakeimg.pl/250x200/?text=Hello',
             'http://fakeimg.pl/250x200/?text=Hello',
-            'http://fakeimg.pl/250x200/?text=Hello',
-            'http://fakeimg.pl/250x200/?text=Hello',
-            'http://fakeimg.pl/250x200/?text=Hello',
-            'http://fakeimg.pl/250x200/?text=Hello',
-            'http://fakeimg.pl/350x300/?text=World&font=lobster',
-            'http://fakeimg.pl/350x300/?text=World&font=lobster',
-            'http://fakeimg.pl/350x300/?text=World&font=lobster',
-            'http://fakeimg.pl/350x300/?text=World&font=lobster',
+            'http://fakeimg.pl/250x200/?text=Hello', 
+            './imgs/img8.jpg',
+            './imgs/img9.jpg',
+            './imgs/img10.jpg',
         ],
 };
 const ModuleReturns = ['output', 'methods'];

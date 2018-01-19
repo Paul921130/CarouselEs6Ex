@@ -191,7 +191,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var ModuleName = 'carousel';
 var ModuleDefaults = {
     pageSize: 6,
-    data: ['./imgs/img11.jpg', 'http://fakeimg.pl/350x300/?text=2', './imgs/img3.jpg', './imgs/img12.jpg', './imgs/img4.jpg', 'http://fakeimg.pl/350x300/?text=6', './imgs/img5.jpg', 'http://fakeimg.pl/400x300/?text=8', './imgs/img6.jpg', './imgs/img7.jpg', 'http://fakeimg.pl/350x350/?text=11', './imgs/img8.jpg', './imgs/img9.jpg', './imgs/img10.jpg', 'http://fakeimg.pl/350x300/?text=15', 'http://fakeimg.pl/250x200/?text=Hello', 'http://fakeimg.pl/250x200/?text=Hello', 'http://fakeimg.pl/250x200/?text=Hello', 'http://fakeimg.pl/250x200/?text=Hello', 'http://fakeimg.pl/250x200/?text=Hello', 'http://fakeimg.pl/250x200/?text=Hello', 'http://fakeimg.pl/350x300/?text=World&font=lobster', 'http://fakeimg.pl/350x300/?text=World&font=lobster', 'http://fakeimg.pl/350x300/?text=World&font=lobster', 'http://fakeimg.pl/350x300/?text=World&font=lobster']
+    data: ['./imgs/img11.jpg', 'http://fakeimg.pl/350x300/?text=2', './imgs/img3.jpg', './imgs/img12.jpg', './imgs/img4.jpg', 'http://fakeimg.pl/350x300/?text=6', './imgs/img5.jpg', 'http://fakeimg.pl/400x300/?text=8', './imgs/img6.jpg', './imgs/img7.jpg', 'http://fakeimg.pl/350x350/?text=11', './imgs/img8.jpg', './imgs/img9.jpg', './imgs/img10.jpg', 'http://fakeimg.pl/350x300/?text=15', 'http://fakeimg.pl/250x200/?text=Hello', 'http://fakeimg.pl/250x200/?text=Hello', 'http://fakeimg.pl/250x200/?text=Hello', './imgs/img8.jpg', './imgs/img9.jpg', './imgs/img10.jpg']
 };
 var ModuleReturns = ['output', 'methods'];
 
