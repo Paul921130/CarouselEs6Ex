@@ -196,15 +196,14 @@ var ModuleDefaults = {
 var ModuleReturns = ['output', 'methods'];
 
 var Module = function () {
-    function Module(ele, options, options2) {
+    function Module(ele, options) {
         _classCallCheck(this, Module);
 
         this.ele = ele;
         this.$ele = $(ele);
         this.option = options;
-        this.option2 = options2;
-        this.$Html = $('<img class="mainPic" src="http://fakeimg.pl/600x400/?text=Hello" alt="">' + '<div class="up" src="http://fakeimg.pl/350x200/?text=Hello" alt="">' + '<a class="up-left" style="text-decoration:none;"><</a>' + '<div class="upcontent"></div>' + '<a class="up-right" style="text-decoration:none;">></a>' + '</div>' + '<div class="img-down">' + '<div class="img-down_left">※客房以實際入住房型為主,圖片僅提供參考</div>' + '<div class="img-down_right">查看大圖<img src="./zoomIn.png" alt=""></div>' + '</div>');
-        this.$Html2 = $('<div class="down">' + '<a class="down-left"> < </a>' + '<ul class="smallPic_ul">' + '</ul>' + '<a class="down-right"> > </a>' + '</div>');
+        this.$Html = $('<img class="mainPic" src="http://fakeimg.pl/600x400/?text=Hello" alt="">' + '<div class="up" src="http://fakeimg.pl/350x200/?text=Hello" alt="">' + '<a class="up-left" style="text-decoration:none;"><</a>' + '<div class="upcontent"></div>' + '<a class="up-right" style="text-decoration:none;">></a>' + '</div>' + '<div class="img-down">' + '<div class="img-down_left">※客房以實際入住房型為主,圖片僅提供參考</div>' + '<div class="img-down_right">查看大圖<img src="./imgs/zoomIn.png" alt=""></div>' + '</div>');
+        this.$Html2 = $('<div class="carousel_down">' + '<a class="down-left"> < </a>' + '<ul class="smallPic_ul">' + '</ul>' + '<a class="down-right"> > </a>' + '</div>');
     }
 
     _createClass(Module, [{

@@ -22,11 +22,10 @@ const ModuleDefaults =  {
 const ModuleReturns = ['output', 'methods'];
 
 class Module {
-	constructor ( ele, options ,options2) {
+	constructor ( ele, options ) {
 		this.ele = ele;
 		this.$ele = $(ele);
 		this.option = options;
-		this.option2 = options2;
         this.$Html = $('<img class="mainPic" src="http://fakeimg.pl/600x400/?text=Hello" alt="">' +
             '<div class="up" src="http://fakeimg.pl/350x200/?text=Hello" alt="">' +
             '<a class="up-left" style="text-decoration:none;"><</a>' +
@@ -35,10 +34,10 @@ class Module {
             '</div>' +
             '<div class="img-down">' +
             '<div class="img-down_left">※客房以實際入住房型為主,圖片僅提供參考</div>' +
-            '<div class="img-down_right">查看大圖<img src="./zoomIn.png" alt=""></div>' +
+            '<div class="img-down_right">查看大圖<img src="./imgs/zoomIn.png" alt=""></div>' +
             '</div>'
         );
-        this.$Html2 = $('<div class="down">' +
+        this.$Html2 = $('<div class="carousel_down">' +
             '<a class="down-left"> < </a>' +
             '<ul class="smallPic_ul">' +
             '</ul>' +
