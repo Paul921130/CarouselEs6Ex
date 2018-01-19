@@ -454,17 +454,14 @@ var Module = function () {
             });
             return this;
         }
-    }, {
-        key: 'methods',
-        value: function methods() {
+        // methods () {
 
-            return this;
-        }
-    }, {
-        key: 'output',
-        value: function output() {
-            return this;
-        }
+        // 	return this;
+        // }
+        // output () {
+        // 	return this;
+        // }
+
     }]);
 
     return Module;

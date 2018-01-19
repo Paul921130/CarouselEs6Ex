@@ -271,13 +271,13 @@ class Module {
         });
 		return this;
 	}
-	methods () {
+	// methods () {
 		
-		return this;
-	}
-	output () {
-		return this;
-	}
+	// 	return this;
+	// }
+	// output () {
+	// 	return this;
+	// }
 };
 
 export { ModuleName, ModuleDefaults, ModuleReturns, Module };
