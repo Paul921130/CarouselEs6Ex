@@ -69,12 +69,8 @@ li {
     	}
     }
     @media screen and (min-width: $screen-lg-desktop) {
-    	>ul{
-    		>li{
-    			>img{
-					width: 85px;
-    			}
-    		}
+    	>ul>li>img{
+            width: 85px;
     	}
     }
 }
